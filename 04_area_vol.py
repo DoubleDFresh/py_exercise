@@ -14,7 +14,8 @@ def volume(length, width, height):
     return (length * width * height)
 
 def surfaceArea(length, width, height):
-    return (length * width * 2) + (length * height * 2) + (width * height * 2)
+    # updated to remove redunant * 2
+    return ((length * width) + (length * height) + (width * height)) * 2
 
 assert area(10, 10) == 100 
 assert area(0, 9999) == 0 
